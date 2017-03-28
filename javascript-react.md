@@ -1,6 +1,6 @@
 # REACT NOTES
 
-This is a collection of my notes for various programming languages as I'm learning them. I will try and include sources as they come up.
+This is a collection of my notes for various programming languages as I'm learning them. I will try and include sources as they come up. It will be updated as I have time. If you would like to contribute, let me know, but it's not to write a book on React, it's for quick note to remind me what certain things do, what the concepts/ideas of each section are, and maybe some example code usage.
 
 
 ## Table of Contents
