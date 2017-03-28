@@ -36,7 +36,9 @@ FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate.
 
 
 
+```Javascript
 USAGE: npm install create-react-app
+```
 
 ## 2. Props
 
@@ -46,7 +48,7 @@ eg....
 
 ```Javascript
 const HelloWorld = (props) => { }
-```
+``
 ## 3. State
 
 
