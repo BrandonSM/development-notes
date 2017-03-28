@@ -40,6 +40,11 @@ USAGE: npm install create-react-app
 
 ## 2. Props
 
+Props are equivalent to arguments (args)
+
+eg....
+
+`const HelloWorld = (props) => { }`
 
 ## 3. State
 
