@@ -44,8 +44,9 @@ Props are equivalent to arguments (args)
 
 eg....
 
-`const HelloWorld = (props) => { }`
-
+```Javascript
+const HelloWorld = (props) => { }
+```
 ## 3. State
 
 
