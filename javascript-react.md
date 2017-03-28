@@ -1,19 +1,23 @@
-### REACT NOTES
+## REACT NOTES
+
+This is a collection of notes for 
 ---------------------------------------------------------
-A.) APP SETUP
-B.) Props
-C.) State
-1.) Render / Export
-2.) Components
-3.) Utils / Helpers
-4.) Navigation / Routing
-5.) Database
-6.) Redux
-7.) Immutable
-8.) 
+
+## Table of Contents
+1.) APP SETUP
+2.) Props
+3.) State
+4.) Render / Export
+5.) Components
+6.) Utils / Helpers
+7.) Navigation / Routing
+8.) Database
+9.) Redux
+10.) Immutable
+11.) 
 
 
-### A. APP SETUP
+## 1. APP SETUP
 
 FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate. The great mind of Dan Abramov (facebook) decided to give us a pre-built "app" template to cut down on development time. (https://github.com/facebookincubator/create-react-app)
 
@@ -33,37 +37,31 @@ FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate.
 
 USAGE: npm install create-react-app
 
-### B. Props
+## 2. Props
 
 
-### C. State
+## 3. State
 
 
-### 1. Render / Export
+## 4. Render / Export
 
 
-
-### 2. Components
-
+## 5. Components
 
 
-### 3. UTILS / HELPERS
+## 6. UTILS / HELPERS
 
 
-
-### 4. Navigation / Routing
-
+## 7. Navigation / Routing
 
 
-### 5. Database Solutions
+## 8. Database Solutions
 
 
-
-### 6. Redux
-
+## 9. Redux
 
 
-### 7. ImmutableJS
+## 10. ImmutableJS
 
 
-### 8. Database
+## 11. Database
