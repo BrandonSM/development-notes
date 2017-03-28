@@ -1,20 +1,19 @@
-## REACT NOTES
+# REACT NOTES
 
 This is a collection of notes for 
 ---------------------------------------------------------
 
 ## Table of Contents
-1.) APP SETUP
-2.) Props
-3.) State
-4.) Render / Export
-5.) Components
-6.) Utils / Helpers
-7.) Navigation / Routing
-8.) Database
-9.) Redux
-10.) Immutable
-11.) 
+1. APP SETUP
+2. Props
+3. State
+4. Render / Export
+5. Components
+6. Utils / Helpers
+7. Navigation / Routing
+8. Database
+9. Redux
+10. Immutable 
 
 
 ## 1. APP SETUP
