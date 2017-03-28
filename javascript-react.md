@@ -1,7 +1,7 @@
 # REACT NOTES
 
-This is a collection of notes for 
----------------------------------------------------------
+This is a collection of my notes for various programming languages as I'm learning them. I will try and include sources as they come up.
+
 
 ## Table of Contents
 1. APP SETUP
