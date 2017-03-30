@@ -7,12 +7,12 @@ If you find it useful, star it and enjoy it.
 
 ## Table of Contents
 1. APP SETUP
-2. Props
-3. State
+2. Components
+3. Props
 4. Render / Export
-5. Components
-6. Utils / Helpers
-7. Navigation / Routing
+5. State
+6. Navigation / Routing
+7. Utils / Helpers
 8. Database
 9. Redux
 10. Immutable 
@@ -40,7 +40,12 @@ FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate.
 USAGE: npm install create-react-app
 ```
 
-## 2. Props
+## 2. Components
+
+Components need to be imported into the App.js file to be utilized (lazy loading?)
+
+
+## 3. Props
 
 Props are equivalent to arguments (args)
 
@@ -50,28 +55,29 @@ eg....
 const HelloWorld = (props) => { }
 ```
 
-## 3. State
-
 
 ## 4. Render / Export
 
 
-## 5. Components
+
+## 5. State
 
 
-## 6. UTILS / HELPERS
+
+## 6. Navigation / Routing
 
 
-## 7. Navigation / Routing
+
+## 7. UTILS / HELPERS
+
 
 
 ## 8. Database Solutions
 
 
+
 ## 9. Redux
 
 
+
 ## 10. ImmutableJS
-
-
-## 11. Database
