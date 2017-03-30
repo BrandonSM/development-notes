@@ -16,6 +16,7 @@ If you find it useful, star it and enjoy it.
 8. Database
 9. Redux
 10. Immutable 
+TERMINOLOGY
 
 
 ## 1. APP SETUP
@@ -81,3 +82,16 @@ const HelloWorld = (props) => { }
 
 
 ## 10. ImmutableJS
+
+
+
+## RESOURCES
+
+"Aha Moments" by Tyler McGinnis (reacttraining.com) -- https://tylermcginnis.com/react-aha-moments/ 
+
+"Learning React with 'create-react-app' npm package" by Brandon Richey -- https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc
+
+## TERMINOLOGY
+
+Abstractions - 
+
