@@ -67,12 +67,11 @@ The render() function is the only "requirement" of the react component. Scope ha
 
 ```Javascript
 class ClassName extends Component {
-	render() {
-
-		return (
-			<Text>Hello, World!</Text>
-		);
-	}
+  render() {
+    return (
+      <Text>Hello, World!</Text>
+    );
+  }
 }
 ```
 
