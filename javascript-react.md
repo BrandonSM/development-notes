@@ -61,7 +61,20 @@ eg. within a Component
 <Text prop={args} ></Text>
 ```
 
-## 4. Render / Export
+## 4. Render / return / Export
+
+The render() function is the only "requirement" of the react component. Scope happens within the render() function. The return() function allows rendering of JSX.
+
+```Javascript
+class ClassName extends Component {
+	render() {
+
+		return (
+			<Text>Hello, World!</Text>
+		);
+	}
+}
+```
 
 
 
