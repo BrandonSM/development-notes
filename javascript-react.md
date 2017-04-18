@@ -1,6 +1,6 @@
 # REACT NOTES
 
-This is a collection of my notes I'm keeping for various programming languages as I learn them. I will try and include sources as I use them as well. It's inteded for use as quick notes to remind me what certain things do, what the concepts/ideas of each section are, and maybe some example code usage.
+This is a collection of notes I'm keeping on the Javascript React framework as I learn it. I will try and include sources as I use them for the notes. It's inteded to be used as a cheatsheet to get a React app up and running quickly. It serves to remind me what certain things do, what the concepts/ideas of each section are, and maybe some example code usage.
 
 If you find it useful, star it and enjoy it.
 
