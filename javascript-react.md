@@ -48,7 +48,7 @@ Components need to be imported into the App.js file to be utilized (lazy loading
 
 ## 3. Props
 
-Props are equivalent to arguments (args)
+Props are equivalent to arguments (args). They are considered properties that are assigned values.
 
 eg....
 
