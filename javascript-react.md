@@ -56,6 +56,10 @@ eg....
 const HelloWorld = (props) => { }
 ```
 
+eg. within a Component
+```Javascript
+<Text prop={args} ></Text>
+```
 
 ## 4. Render / Export
 
