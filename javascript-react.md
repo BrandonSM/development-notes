@@ -8,8 +8,8 @@ If you find it useful, star it and enjoy it.
 ## Table of Contents
 1. APP SETUP
 2. Components
-3. Props
-4. Render / Export
+3. Render / Export
+4. Props
 5. State
 6. Navigation / Routing
 7. Utils / Helpers
@@ -45,23 +45,10 @@ USAGE: npm install create-react-app
 
 Components need to be imported into the App.js file to be utilized (lazy loading?)
 
+`<View>` - A view component is good to use as a container for other components to help control style and layout.
 
-## 3. Props
 
-Props are equivalent to arguments (args). They are considered properties that are assigned values.
-
-eg....
-
-```Javascript
-const HelloWorld = (props) => { }
-```
-
-eg. within a Component
-```Javascript
-<Text prop={args} ></Text>
-```
-
-## 4. Render / return / Export
+## 3. Render / return / Export
 
 The render() function is the only "requirement" of the react component. Scope happens within the render() function. The return() function allows rendering of JSX.
 
@@ -74,6 +61,24 @@ class ClassName extends Component {
   }
 }
 ```
+
+## 4. Props
+
+Props are equivalent to arguments (args). They are considered properties that are assigned values.
+
+*** Props are set by the parent, and 
+
+eg....
+
+```Javascript
+const HelloWorld = (props) => { }
+```
+
+eg. within a Component
+```Javascript
+<Text prop={args} ></Text>
+```
+
 
 
 
