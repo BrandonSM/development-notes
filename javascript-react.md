@@ -47,6 +47,7 @@ Components need to be imported into the App.js file to be utilized (lazy loading
 
 `<View>` - A view component is good to use as a container for other components to help control style and layout.
 
+Each Component has it's own `state` object
 
 ## 3. Render / return / Export
 
@@ -64,27 +65,32 @@ class ClassName extends Component {
 
 ## 4. Props
 
-Props are equivalent to arguments (args). They are considered properties that are assigned values.
+Props are equivalent to arguments (args). They are considered properties that are assigned values by the parent, and and are fixed throughout the lifetime of the component.
 
-*** Props are set by the parent, and 
-
-eg....
+eg.
 
 ```Javascript
-const HelloWorld = (props) => { }
+const HelloWorld = (props) => { } 
 ```
 
 eg. within a Component
 ```Javascript
-<Text prop={args} ></Text>
+<Text prop={args}></Text>
 ```
-
-
-
 
 ## 5. State
 
+State is usually initialized in the constructor() and then changed by calling setState()
 
+```Javascript
+// Sets initial State
+constructor(props) {
+  super(props);
+  this.state = {
+    searchString: 'london'
+  };
+}
+```
 
 ## 6. Navigation / Routing
 
