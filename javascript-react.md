@@ -80,7 +80,7 @@ eg. within a Component
 
 ## 5. State
 
-State is usually initialized in the constructor() and then changed by calling setState()
+State is usually initialized in the constructor() and then changed by calling setState(). It is set just before the `render(){}` method.
 
 ```Javascript
 // Sets initial State
@@ -89,6 +89,12 @@ constructor(props) {
   this.state = {
     searchString: 'london'
   };
+}
+
+render () { 
+	return (
+	
+	);
 }
 ```
 
