@@ -5,6 +5,7 @@ This repo serves as a holding place for all the various notes I'm taking as I'm 
 ### Languages 
 
 1. React
+2. Xamarin
 
 ### Dev Environment
 
