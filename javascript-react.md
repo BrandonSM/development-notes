@@ -98,6 +98,43 @@ render () {
 }
 ```
 
+After the state has been initiated, you need to do something with it. 
+
+The first step is to create a method that acts as an event handler.
+
+```Javascript
+// Creates the onSearchTextChanged method on event
+onSearchTextChanged(event) {
+  console.log('onSearchTextChanged');
+  this.setState({ searchString: event.nativeEvent.text });
+  console.log(this.state.searchString);
+}
+```
+
+The next step is to bind the method to a javascript method (eg.. onChange) that will be listening for an event.
+
+```Javascript
+<TextInput
+  style={styles.searchInput}
+  value={this.state.searchString}
+  onChange={this.onSearchTextChanged.bind(this)}
+  placeholder='Search via name or postcode'/>
+```
+
+State is changed as a separate step of a method. When a method is called, you also place a line for changing the state.
+
+```Javascript
+_executeQuery(query) {
+  console.log(query);
+  this.setState({ isLoading: true });
+}
+ 
+onSearchPressed() {
+  var query = urlForQueryAndPage('place_name', this.state.searchString, 1);
+  this._executeQuery(query);
+}
+```
+
 ## 6. Navigation / Routing
 
 
