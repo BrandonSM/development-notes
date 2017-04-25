@@ -124,6 +124,7 @@ The next step is to bind the method to a javascript method (eg.. onChange) that 
 State is changed as a separate step of a method. When a method is called, you also place a line for changing the state.
 
 ```Javascript
+// this.setState is added to the method to change the state when the query isLoading.
 _executeQuery(query) {
   console.log(query);
   this.setState({ isLoading: true });
