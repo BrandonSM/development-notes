@@ -158,9 +158,11 @@ onSearchPressed() {
 
 ## RESOURCES
 
-"Aha Moments" by Tyler McGinnis (reacttraining.com) -- https://tylermcginnis.com/react-aha-moments/ 
+"Aha Moments" by Tyler McGinnis (@TylerMcGinnis) -- https://tylermcginnis.com/react-aha-moments/ 
 
 "Learning React with 'create-react-app' npm package" by Brandon Richey -- https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc
+
+"React Native Tutorial" by Ray Wenderlich -- https://www.raywenderlich.com/126063/react-native-tutorial
 
 ## TERMINOLOGY
 
