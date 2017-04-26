@@ -1,11 +1,11 @@
 # JavaScript
 JavaScript related notes.
 
-### this
+## this
 
 
-### Selectors
+## Selectors
 
 
-### Promises
+## Promises
 
