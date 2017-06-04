@@ -62,27 +62,6 @@ class ClassName extends Component {
   }
 }
 
-The `constructor(props)` section of a Component is essentially the initial `state`. 
-
-The `super(props)` line passes the `props` to the constructor and allows them to be used in the `state`.
-
-```Javascript
-class ClassName extends Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date()};
-  }
-
-  render() {
-    return (
-      <Text>Hello, World!</Text>
-    );
-  }
-}
-```
-constructor 
-
 ## 4. Props
 
 Props are equivalent to arguments (args). They are considered properties that are assigned values by the parent, and and are fixed throughout the lifetime of the component.
@@ -100,7 +79,7 @@ eg. within a Component
 
 ## 5. State
 
-State is usually initialized in the constructor() and then changed by calling setState(). It is set just before the `render(){}` method.
+State is usually initialized in the `constructor()` and then changed by calling `setState()`. It is set just before the `render(){}` method.
 
 ```Javascript
 // Sets initial State
