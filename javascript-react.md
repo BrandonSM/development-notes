@@ -136,6 +136,25 @@ onSearchPressed() {
 }
 ```
 
+####Lifecycle State--
+
+Lifecycle methods are added to a Class/Component so that resources can be freed up when a component is not in use/destroyed. 
+
+```Javascript
+/* Runs when the component attaches to the DOM/becomes active */
+componentDidMount() {
+
+}
+```
+
+```Javascript
+/* Runs when the component is non longer used */
+componentWillUnmount() {
+
+}
+```
+
+
 ## 6. Navigation / Routing
 
 
