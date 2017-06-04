@@ -136,7 +136,7 @@ onSearchPressed() {
 }
 ```
 
-####Lifecycle State--
+#### Lifecycle State
 
 Lifecycle methods are added to a Class/Component so that resources can be freed up when a component is not in use/destroyed. 
 
@@ -145,9 +145,7 @@ Lifecycle methods are added to a Class/Component so that resources can be freed 
 componentDidMount() {
 
 }
-```
 
-```Javascript
 /* Runs when the component is non longer used */
 componentWillUnmount() {
 
