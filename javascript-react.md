@@ -61,6 +61,7 @@ class ClassName extends Component {
     );
   }
 }
+```
 
 ## 4. Props
 
