@@ -61,7 +61,27 @@ class ClassName extends Component {
     );
   }
 }
+
+The `constructor(props)` section of a Component is essentially the initial `state`. 
+
+The `super(props)` line passes the `props` to the constructor and allows them to be used in the `state`.
+
+```Javascript
+class ClassName extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  render() {
+    return (
+      <Text>Hello, World!</Text>
+    );
+  }
+}
 ```
+constructor 
 
 ## 4. Props
 
