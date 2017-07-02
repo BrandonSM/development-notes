@@ -37,20 +37,26 @@ Add eslint config "rallycoding" to the project
 Add `.eslintrc` file
 
 
-## Components
+## Application Setup
 
 3 Steps to creating components
 
-1.) Import libraries
-2.) Make Component
-3.) Make Component available to other parts of app
-
+1. Import libraries
+2. Make Component
+3. Make Component available to other parts of app
 
 ```Javascript
+// Import Libraries
+import { React } from 'react';
+import { AppRegistry } from 'react-native';
+
 // Creates the main component
 const App = () => {
   return(
       <Header />
     )
 };
+
+// Render to the device
+AppRegistry.registerComponent('projectname', () => App);
 ```
