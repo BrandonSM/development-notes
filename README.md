@@ -4,13 +4,31 @@ This repo serves as a holding place for all the various notes I'm taking as I'm 
 
 ## Languages 
 
-1. JavaScript
-2. [React](https://facebook.github.io/react/)
-2. [Xamarin](https://www.xamarin.com/)
+1. [JavaScript](#)
+2. [PHP](#)
+3. [Ruby](#)
+4. [HTML/CSS](#)
+5. [Swift](#)
+6. [Android](#)
+
+## Frameworks
+
+1. [React (JavaScript)](#)
+2. [React Native (JavaScript)](#) 
 
 ## Dev Environment
 
-1. Terminal
-2. [Git](https://git-scm.com/)
-3. [Sublime Text 3](https://www.sublimetext.com/3) 
-4. Package Managers (Yarn, NPM)
+1. [Terminal](#)
+2. [Text Editors](#)
+3. [Package Managers](#)
+4. [Webpack](#)
+5. [Babel](#)
+
+## IDEs
+
+1.) xCode
+2.) Android Studio
+3.) Expo.io
+4.) 
+
+
