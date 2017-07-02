@@ -35,13 +35,15 @@ FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate.
 
 "yarn.lock" - yarn lock file.
 
-
-
 ```Javascript
 USAGE: npm install create-react-app
 ```
 
+I prefer to use `yarn add` to add packages after setting up the app. NPM is fine also.
+
 ## 2. Components
+
+The idea of a Component is to create an "object" that can be re-used all over your codebase. 
 
 Components need to be imported into the App.js file to be utilized (lazy loading?)
 
