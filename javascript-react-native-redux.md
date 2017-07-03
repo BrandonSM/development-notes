@@ -52,11 +52,18 @@ import { AppRegistry } from 'react-native';
 
 // Creates the main component
 const App = () => {
-  return(
-      <Header />
-    )
+  return (
+      <Text>Hello World!</Text>
+  )
 };
 
 // Render to the device
 AppRegistry.registerComponent('projectname', () => App);
 ```
+
+## Props
+
+When we want to pass variables from parent component to child component we use `props`
+
+Passing props to the interface is a core component of React and React Native. 
+
