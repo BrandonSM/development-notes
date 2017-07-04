@@ -131,12 +131,16 @@ DIFFERENCE BETWEEN `state` and `props`
 
 ## Fetching data
 
-//Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/
+The tutorial on Udemy showed most of the `fetch` code in the `componentWillMount()` method. There are some that believe (myself included) that it's better to fetch the data once the component actually renders in the `componentDidMount()` method. This reminds you to always setup an initial state to avoid errors. 
+
+```
+// Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/
 In practice, `componentDidMount` is the best place to put calls to fetch data, for two reasons:
 
 Using DidMount makes it clear that data won’t be loaded until after the initial render. This reminds you to set up initial state properly, so you don’t end up with undefined state that causes errors.
 
 If you ever need to render your app on the server (SSR/isomorphic/other buzzwords), componentWillMount will actually be called twice – once on the server, and again on the client – which is probably not what you want. Putting the data loading code in componentDidMount will ensure that data is only fetched from the client.
+```
 
 ## Debbuging
 
