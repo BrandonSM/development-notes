@@ -106,6 +106,7 @@ class Header extends Component {
 		return <Text>Hi There!</Text>
 	}
 }
+```
 
 ### State
 
