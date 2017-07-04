@@ -1,6 +1,6 @@
 # React Native & Redux
 
-Notes on React Native and Redux
+Notes on React Native and Redux that were taken while completing the "Complete React Native and Redux" course by Stephen Grider (@ste_grider).
 
 ## Introduction
 
@@ -48,7 +48,7 @@ Add `.eslintrc` file
 ```Javascript
 // Import Libraries
 import { React } from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, Text } from 'react-native';
 
 // Creates the main component
 const App = () => {
@@ -60,12 +60,6 @@ const App = () => {
 // Render to the device
 AppRegistry.registerComponent('projectname', () => App);
 ```
-
-## Props
-
-When we want to pass variables from parent component to child component we use `props`
-
-Passing props to the interface is a core component of React and React Native. Props make component resuability possible.
 
 ## Components
 
@@ -108,7 +102,13 @@ class Header extends Component {
 }
 ```
 
-### State
+## Props
+
+When we want to pass variables from parent component to child component we use `props`
+
+Passing props to the interface is a core component of React and React Native. Props make component resuability possible.
+
+## State
 
 `state` - a plane javascript object used to record, and respond to user-triggered events.
 
@@ -129,7 +129,7 @@ DIFFERENCE BETWEEN `state` and `props`
 - Want to communicate from Parent > Child component, use PROPS.
 - State is for a components internal record keeping.
 
-### Fetching data
+## Fetching data
 
 //Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/
 In practice, `componentDidMount` is the best place to put calls to fetch data, for two reasons:
