@@ -30,10 +30,6 @@ Add eslint to the project
 
 `yarn add eslint`
 
-Add eslint config "rallycoding" to the project
-
-`yarn add eslint-config-rallycoding`
-
 Add `.eslintrc` file
 
 
@@ -65,7 +61,7 @@ AppRegistry.registerComponent('projectname', () => App);
 
 Functional vs. Class-Based
 
-Functional -- garden hose/pipe (one way). Data in, JSX out.
+Functional -- garden hose/pipe (one way). Data in, JSX out. Basically just used to display information. Presentational component.
 
 ```JavaScript
 const Header = () => {
@@ -108,6 +104,8 @@ When we want to pass variables from parent component to child component we use `
 
 Passing props to the interface is a core component of React and React Native. Props make component resuability possible.
 
+
+
 ## State
 
 `state` - a plane javascript object used to record, and respond to user-triggered events.
@@ -133,14 +131,27 @@ DIFFERENCE BETWEEN `state` and `props`
 
 The tutorial on Udemy showed most of the `fetch` code in the `componentWillMount()` method. There are some that believe (myself included) that it's better to fetch the data once the component actually renders in the `componentDidMount()` method. This reminds you to always setup an initial state to avoid errors. 
 
-```
-// Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/
-In practice, `componentDidMount` is the best place to put calls to fetch data, for two reasons:
 
-Using DidMount makes it clear that data won’t be loaded until after the initial render. This reminds you to set up initial state properly, so you don’t end up with undefined state that causes errors.
+Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/
+> In practice, `componentDidMount` is the best place to put calls to fetch data, for two reasons:
 
-If you ever need to render your app on the server (SSR/isomorphic/other buzzwords), componentWillMount will actually be called twice – once on the server, and again on the client – which is probably not what you want. Putting the data loading code in componentDidMount will ensure that data is only fetched from the client.
-```
+> Using DidMount makes it clear that data won’t be loaded until after the initial render. This reminds you to set up initial state properly, so you don’t end up with undefined state that causes errors.
+
+> If you ever need to render your app on the server (SSR/isomorphic/other buzzwords), componentWillMount will actually be called twice – once on the server, and again on the client – which is probably not what you want. Putting the data loading code in componentDidMount will ensure that data is only fetched from the client.
+
+
+## Images
+
+When we use an image in React Native, it WILL NOT expand to fill the container (like HTML). You must specify a height and width.
+
+
+## Firebase Integration
+
+After creating a Firebase account, there are options for iOS, Android, and WebApp. 
+
+Add Firebase to Web App = Add Firebase to Javascript application
+
+
 
 ## Debbuging
 
