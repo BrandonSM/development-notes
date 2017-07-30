@@ -151,6 +151,10 @@ After creating a Firebase account, there are options for iOS, Android, and WebAp
 
 Add Firebase to Web App = Add Firebase to Javascript application
 
+## Input
+
+`<TextInput/>` does not have a standard width and height. If there is none supplied, the component won't render.
+
 
 
 ## Debbuging
