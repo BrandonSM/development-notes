@@ -30,4 +30,24 @@ func calculateArea(length: Int, width: Int) -> Int {
     let area = length * width
     return area
 }
+
+let newArea = calculateArea(length: 5, width: 4)
+
+````
+
+You can use `inout` to modify the variable directly. Use sparingly.
+````Swift
+var bankAccountBalance = 500.00
+var newShoes = 340.00
+
+func purchaseItem(currentBalance: inout Double, itemPrice: Double) -> Double {
+    if itemPrice <= currentBalance {
+        currentBalance = currentBalance - itemPrice
+        print("Purchased item for: $\(itemPrice)")
+    } else {
+        print("You are broke, save money")
+    }
+}
+
+let newBalance = purchaseItem(currentBalance: &bankAccountBalance, itemPrice: newShoes)
 ````
