@@ -48,6 +48,31 @@ func purchaseItem(currentBalance: inout Double, itemPrice: Double) -> Double {
         print("You are broke, save money")
     }
 }
-
+ 
 let newBalance = purchaseItem(currentBalance: &bankAccountBalance, itemPrice: newShoes)
 ````
+
+
+## Collection Types
+
+Section discusses "Collection Types" in Swift.
+
+
+### Array
+
+Ordered list of items and can have multiple indexes with the same value.
+
+### Optionals
+
+`where` was changed to a `,` (comma) in Swift 8.
+
+### Set
+
+Has items that should only have one type of value. Each value needs to be unique.
+
+### Dictionary
+
+Has keys and values. Key is certain type, value related to key. (not ordered)
+
+A hash table is called a "Dictionary", hash maps, etc..
+
