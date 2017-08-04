@@ -145,11 +145,26 @@ Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-compon
 When we use an image in React Native, it WILL NOT expand to fill the container (like HTML). You must specify a height and width.
 
 
-## Firebase Integration
+## Authentication 
+
+	  onButtonPress() {
+	 	  const {email,password} = this.state;
+		  firebase.auth().signInWithEmailAndPassword(email, password)
+		  	.catch(() => {
+			  	firebase.auth().createUserWithEmailAndPassword(email, password)
+				  	.catch(()=> { 
+					  	this.setState({ error: 'Authentication Failed' })
+				  	});
+		  	});
+  	}
+
+### Firebase Integration
 
 After creating a Firebase account, there are options for iOS, Android, and WebApp. 
 
 Add Firebase to Web App = Add Firebase to Javascript application
+
+
 
 ## Input
 
