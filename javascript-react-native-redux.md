@@ -147,16 +147,19 @@ When we use an image in React Native, it WILL NOT expand to fill the container (
 
 ## Authentication 
 
-	  onButtonPress() {
-	 	  const {email,password} = this.state;
-		  firebase.auth().signInWithEmailAndPassword(email, password)
-		  	.catch(() => {
-			  	firebase.auth().createUserWithEmailAndPassword(email, password)
-				  	.catch(()=> { 
-					  	this.setState({ error: 'Authentication Failed' })
-				  	});
-		  	});
-  	}
+````JavaScript
+onButtonPress() {
+	
+	const {email,password} = this.state;
+		firebase.auth().signInWithEmailAndPassword(email, password)
+		  .catch(() => {
+			  firebase.auth().createUserWithEmailAndPassword(email, password)
+				  .catch(()=> { 
+					  this.setState({ error: 'Authentication Failed' })
+			});
+		});
+}
+````
 
 ### Firebase Integration
 
