@@ -157,7 +157,7 @@ onButtonPress() {
        .catch(()=> {
        	  this.setState({ error: 'Authentication Failed' })
        });
-		});
+ });
 }
 ````
 
