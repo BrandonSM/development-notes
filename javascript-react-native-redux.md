@@ -171,25 +171,44 @@ When we use an image in React Native, it WILL NOT expand to fill the container (
 
 ````JavaScript
 onButtonPress() {
- const {email,password} = this.state;
+  const {email,password} = this.state;
 
- firebase.auth().signInWithEmailAndPassword(email, password)
-   .catch(() => {
-     firebase.auth().createUserWithEmailAndPassword(email, password)
-       .catch(()=> {
-       	  this.setState({ error: 'Authentication Failed' })
-       });
- });
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .catch(() => {
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+    .catch(()=> {
+      this.setState({ error: 'Authentication Failed' })
+    });
+  });
 }
 ````
 
-### Firebase Integration
+### Firebase Authentication
 
 After creating a Firebase account, there are options for iOS, Android, and WebApp. 
 
-Add Firebase to Web App = Add Firebase to Javascript application
+Example for logging in with `signInWithEmailAndPassword()`
+````JavaScript
+onButtonPress() {
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    //Beacuse this is a function we are passing off to a promise, that is going to be invoked at some time in the future,  
+    // and we don't know the context, we have to bind the method to this.
+    .then(this.onLoginSuccess.bind(this))
+    .catch(() => { 
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(this.onLoginSuccess.bind(this))
+      .catch(this.onLoginFailed.bind(this));
+  }); 
+}
+````
 
-
+```JavaScript
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  }
+});
+````
 
 ## Input
 
