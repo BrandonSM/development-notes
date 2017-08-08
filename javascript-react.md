@@ -21,7 +21,7 @@ TERMINOLOGY
 
 ## 1. APP SETUP
 
-FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate. The great mind of Dan Abramov (facebook) decided to give us a pre-built "app" template to cut down on development time. (https://github.com/facebookincubator/create-react-app)
+FOLDER STRUCTURE -- You can use the "create-react-app" package as a boilerplate. The great minds at facebook decided to give us a pre-built "app" template to cut down on development time. (https://github.com/facebookincubator/create-react-app)
 
 "node_modules" - where npm modules are installed on the project (if not global)
 
@@ -41,6 +41,8 @@ USAGE: npm install create-react-app
 
 I prefer to use `yarn add` to add packages after setting up the app. NPM is fine also.
 
+
+
 ## 2. Components
 
 The idea of a Component is to create an "object" that can be re-used all over your codebase. 
@@ -49,7 +51,7 @@ Components need to be imported into the App.js file to be utilized (lazy loading
 
 `<View>` - A view component is good to use as a container for other components to help control style and layout.
 
-Each Component has it's own `state` object
+Each Component has it's own `state` object that is passed down throughout the component tree.
 
 ## 3. Render / return / Export
 
