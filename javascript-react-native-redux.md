@@ -119,13 +119,13 @@ onButtonPress () {
   this.setState({ error: '' });
   
   firebase.auth().signInWithEmailAndPassword(email, password)
-    .catch(() => { 
-    	firebase.auth().createUserWithEmailAndPassword(email, password)
-    	  .catch(()=>{ 
-    	  	this.setState({ error: 'Invalid email and/or password.' }); 
-    	  	console.log(this.state.error);
-    	  });
-    }); 
+  .catch(() => { 
+  	firebase.auth().createUserWithEmailAndPassword(email, password)
+  	  .catch(()=>{ 
+  	  	this.setState({ error: 'Invalid email and/or password.' }); 
+  	  	console.log(this.state.error);
+  	  });
+  }); 
 }
 ````
 
