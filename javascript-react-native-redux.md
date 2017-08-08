@@ -104,6 +104,8 @@ When we want to pass variables from parent component to child component we use `
 
 Passing props to the interface is a core component of React and React Native. Props make component resuability possible.
 
+Prop names are completely arbitrary. They can be called whatever you want.
+
 
 
 ## State
@@ -113,6 +115,7 @@ Passing props to the interface is a core component of React and React Native. Pr
 Whenever you're using state, a default property must be set. `state = { stateName: 'value' }` It needs to be set in the 
 
 ````JavaScript
+
 onButtonPress () {
   const { email,password } = this.state;
 
@@ -121,7 +124,7 @@ onButtonPress () {
   firebase.auth().signInWithEmailAndPassword(email, password)
   .catch(() => { 
     firebase.auth().createUserWithEmailAndPassword(email, password)
-    .catch(()=>{ 
+    .catch(()=> { 
       this.setState({ error: 'Invalid email and/or password.' }); 
       console.log(this.state.error);
     });
@@ -129,7 +132,7 @@ onButtonPress () {
 }
 ````
 
-When we need to change what a component shows, call `this.setState()`
+When we need to change what a component shows, call `this.setState()`.
 
 `this.setState()` is automatically implemented via the `Component` class. The purpose of `this.setState()` is to update our component state and say "Hey, here's some new data, we need to re-render the component with the new data".
 
@@ -143,8 +146,8 @@ this.state = { albums : data.response }; // BAD - don't do.
 
 DIFFERENCE BETWEEN `state` and `props`
 
-- Want to communicate from Parent > Child component, use PROPS.
-- State is for a components internal record keeping.
+- When you want to communicate from Parent > Child component and pass things through the tree, use `props`.
+- When you want to store a piece of information about the component (ie.. record keeping), use `state`.
 
 ## Fetching data
 
