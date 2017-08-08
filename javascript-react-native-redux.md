@@ -108,25 +108,24 @@ Passing props to the interface is a core component of React and React Native. Pr
 
 ## State
 
-`state` - a plane javascript object used to record, and respond to user-triggered events.
+`state` - a plain javascript object used to record, and respond to user-triggered events. `state` is typically found within a lifecycle method eg.. `componentDidMount(){}` or within a helper method eg.. `onButtonPressed () {}`
 
 Whenever you're using state, a default property must be set. `state = { stateName: 'value' }` It needs to be set in the 
 
 ````JavaScript
 onButtonPress () {
-	console.log("PRESSING BUTTON");
-	const { email,password } = this.state;
+  const { email,password } = this.state;
 
-	this.setState({ error: '' });
-
-	firebase.auth().signInWithEmailAndPassword(email, password)
-		.catch(() => {
-			firebase.auth().createUserWithEmailAndPassword(email, password)
-				.catch(()=>{
-					this.setState({ error: 'Invalid email and/or password.' });
-					console.log(this.state.error);
-				});
-		}); 
+  this.setState({ error: '' });
+  
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .catch(() => { 
+    	firebase.auth().createUserWithEmailAndPassword(email, password)
+    	  .catch(()=>{ 
+    	  	this.setState({ error: 'Invalid email and/or password.' }); 
+    	  	console.log(this.state.error);
+    	  });
+    }); 
 }
 ````
 
