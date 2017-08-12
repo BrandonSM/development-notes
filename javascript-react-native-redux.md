@@ -163,15 +163,13 @@ Copied from https://daveceddia.com/where-fetch-data-componentwillmount-vs-compon
 
 ## Redux
 
-Redux notes.
+Redux notes. Redux has alot of fancy terminology that obscures straightforward concepts. The key is to mastering the terminology to make it easy.
 
-***ONE OF THE BEST LIBRARIES INE XISTNECE FOR SCALING AN APPLICATION TO BE VERY LARGE WITH THE LEAST AMOUNT OF CODE COMPLEXITY***
-THis is due to the action system. This allows us to make predicatable changes. We never have to access the state (store) directly. We use an action. 
-Actions modify the state in a very particular way. We can only modify the state in a very finite number of ways.
+***ONE OF THE BEST LIBRARIES IN EXISTNECE FOR SCALING AN APPLICATION TO BE VERY LARGE WITH THE LEAST AMOUNT OF CODE COMPLEXITY***
+This is due to the `action` system. This allows us to make predicatable changes. We never have to access the `state` (store) directly. We use an `action`. 
+Actions modify the `state` in a very particular way. We can only modify the `state` in a very finite number of ways.
 
-Redux has alot of fancy terminology that obscures straightforward concepts. The key is to mastering the terminology to make it easy.
-
-Reducer - a function that returns some data.
+Reducer - a function that returns some amount of state.
 
 Action - an object that tells the reducer how to change it's data. ***MUST HAVE TYPE property***
 
@@ -214,8 +212,25 @@ const action = {
   type: 'split_string',
   payload: 'asdf',
 };
+
+// returns an empty state array
+store.getState();
+
+// sends the action to the reducer
+store.dispatch(action);
+
+store.getState();
+
+const action2 = {
+  type: 'add_character';
+  payload: 'a',
+};
+
+store.dispatch(action2);
 ````
 At any time you can call `store.getState();` to get an array of the entire contents of the store.
+
+Nothing happens when you create an `action`. It has to be passed to the `dispatch()` method to update the `store`.
 
 ## Images
 
