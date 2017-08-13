@@ -1,4 +1,4 @@
-## Redux
+# Redux
 
 Redux notes. Redux has alot of fancy terminology that obscures straightforward concepts. The key is to mastering the terminology to make it easy.
 
@@ -76,10 +76,70 @@ Whenever you change the state object in the reducers, we MUST return a completel
 WE DO NOT MUTATE THE DATA. We create a completely new one.
 GOLDEN RULE - Always return a new array with reducers.
 
-### Setup
+## Setup
 
 To add it to a project, run `yarn add redux react-redux` or `npm install --save redux react-redux`
 
-### Provider
+Below is an example of the minimum of Redux you could use to add to an application.
+
+````JavaScript
+// src/reducers/index.js
+import { combineReducers } from 'redux'; // makes reducers play nice together
+
+export default combineReducers ({
+  libraries: () => [
+
+  ]
+});
+````
+
+````JavaScript
+import React from 'react';
+import { View, Text } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux'; 
+import reducers from './reducers';
+
+const App = () => {
+  return (
+    <Provider store={createStore(reducers)}>
+      <View/>
+    </Provider>
+  );
+};
+
+export default App;
+````
+
+## Provider
 
 The `<Provider></Provider>` tag works together with the store. each has a speific job. store holds data state1, state2, state3 ... The provider transforms that data into something that can be used with React.
+
+The `<Provider/>` component can only have 1 child component or you will get an error message mentioning the React component can only have 1 child
+
+The following example results in an error...
+````JavaScript
+<Provider store={createStore(reducers)}>
+  <Header />
+  <View/>
+  <Footer />
+</Provider>
+````
+
+The following example is OK
+````JavaScript
+<Provider store={createStore(reducers)}>
+  <View>
+    <Header />
+    <AnotherComponent />
+    <Footer />
+  </View>
+</Provider>
+````
+
+## Reducer
+
+Reducer design - The process of deciding what `reducer`s will exist in the application.
+
+What different variables? What are the different pieces of `state`? The different pieces of data.
+
