@@ -143,3 +143,7 @@ Reducer design - The process of deciding what `reducer`s will exist in the appli
 
 What different variables? What are the different pieces of `state`? The different pieces of data.
 
+
+## Connect helper
+
+TOol that is used explicitly to connect a component to the redux store.
