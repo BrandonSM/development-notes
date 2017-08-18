@@ -146,4 +146,6 @@ What different variables? What are the different pieces of `state`? The differen
 
 ## Connect helper
 
-TOol that is used explicitly to connect a component to the redux store.
+Tool that is used explicitly to `connect()` a component to the redux store.
+
+There is one and only one way to reach into the store (data) and that is with the `connect()` helper.
