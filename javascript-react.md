@@ -10,12 +10,13 @@ If you find it useful, star it and enjoy it.
 2. Components
 3. Render / Export
 4. Props
-5. State
-6. Navigation / Routing
-7. Utils / Helpers
-8. Database
-9. Redux
-10. Immutable 
+5. Lists
+6. State
+7. Navigation / Routing
+8. Utils / Helpers
+9. Database
+10. Redux
+11. Immutable 
 TERMINOLOGY
 
 
@@ -66,10 +67,25 @@ class ClassName extends Component {
   }
 }
 ```
-### Creating lists in React
+
+## 4. Props
+
+Props are equivalent to arguments (args). They are considered properties that are assigned values by the parent, and and are fixed throughout the lifetime of the component.
+
+eg.
+
+```Javascript
+const HelloWorld = (props) => { } 
+```
+
+eg. within a Component
+```Javascript
+<Text prop={args}></Text>
+```
+## Lists 
 
 `.map()` - this is a built in JavaScript method that iterates over an array of objects, and runs the callback function on each piece of code.
-````JavaScript
+```JavaScript
 this.props.list.map(function (name) {
   return <li>{name}</li>
 })
@@ -78,9 +94,10 @@ ReactDOM.render(
   <Users list={['Ashley', 'Andy', 'Ryan', 'Drew']} />,
   document.getElementById('app')
 );
-````
+```
+
 `.filter()` - this is a built in JavaScript method that iterates over an array and is able to filter information based on criteria
-````JavaScript
+```JavaScript
 this.props.list.filter(function (user) {
   return user.friend === true
 }).map(function (name) {
@@ -98,22 +115,6 @@ ReactDOM.render(
 	/>,
 	document.getElementById('app')
 )
-````
-
-
-## 4. Props
-
-Props are equivalent to arguments (args). They are considered properties that are assigned values by the parent, and and are fixed throughout the lifetime of the component.
-
-eg.
-
-```Javascript
-const HelloWorld = (props) => { } 
-```
-
-eg. within a Component
-```Javascript
-<Text prop={args}></Text>
 ```
 
 ## 5. State
