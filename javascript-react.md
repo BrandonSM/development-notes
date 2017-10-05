@@ -53,7 +53,7 @@ Components need to be imported into the App.js file to be utilized (lazy loading
 
 Each Component has it's own `state` object that is passed down throughout the component tree.
 
-## 3. Render / return / Export
+## 3. render(){} / return() / export
 
 The render() function is the only "requirement" of the react component. Scope happens within the render() function. The return() function allows rendering of JSX.
 
@@ -66,6 +66,40 @@ class ClassName extends Component {
   }
 }
 ```
+### Creating lists in React
+
+`.map()` - this is a built in JavaScript method that iterates over an array of objects, and runs the callback function on each piece of code.
+````JavaScript
+this.props.list.map(function (name) {
+  return <li>{name}</li>
+})
+
+ReactDOM.render(
+  <Users list={['Ashley', 'Andy', 'Ryan', 'Drew']} />,
+  document.getElementById('app')
+);
+````
+`.filter()` - this is a built in JavaScript method that iterates over an array and is able to filter information based on criteria
+````JavaScript
+this.props.list.filter(function (user) {
+  return user.friend === true
+}).map(function (name) {
+  return <li>{user.name}</li>
+})
+
+ReactDOM.render(
+	<Users list={[
+		{ name: 'Ashley', friend: true },
+		{ name: 'Ryan', friend: true },
+		{ name: 'Michael', friend: false },
+		{ name: 'Mikenzi', friend: false },
+		{ name: 'Andy', friend: true },
+		{ name: 'Dan', friend: false } ]} 
+	/>,
+	document.getElementById('app')
+)
+````
+
 
 ## 4. Props
 
