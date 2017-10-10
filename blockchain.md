@@ -10,7 +10,9 @@ The blockchain ensures that the asset can only be in one place at one time. It c
 
 **blocks** on the blockchain are created every 10 minutes, and contain a reference to the block before it. You can trace the blocks and information all the way back to the first bitcoin "mined". *[3]*
 
-
+````
+TO-DO: Add the bitcoin/blockchain mine process list.
+````
 
 
 
