@@ -10,6 +10,8 @@ The blockchain ensures that the asset can only be in one place at one time. It c
 
 **blocks** on the blockchain are created every 10 minutes, and contain a reference to the block before it. You can trace the blocks and information all the way back to the first bitcoin "mined". *[3]*
 
+“What bitcoin miners actually do could be better described as competitive bookkeeping. Miners build and maintain a gigantic public ledger containing a record of every bitcoin transaction in history.” *[3]*
+
 ````
 TO-DO: Add the bitcoin/blockchain mine process list.
 ````
