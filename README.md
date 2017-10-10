@@ -26,9 +26,10 @@ This repo serves as a holding place for all the various notes I'm taking as I'm 
 
 ## IDEs
 
-1. Xcode
-2. Android Studio
-3. Expo.io
-4. 
+1. [Xcode](#)
+2. [Android Studio](#)
+3. [Expo.io](#)
+4. [VSCode](#)
+5. [Visual Studio](#)
 
 
