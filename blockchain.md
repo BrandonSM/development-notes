@@ -1,4 +1,4 @@
-# Blockchain
+# Bitcoin Blockchain
 
 The blockchain gives the ability for 2 internet users to transfer a digital piece of property between them such that the transaction is guaranteed safe and secure. Everyone can see the transfer take place, and no one can challenge the legitamacy of it (why?). *[1]*
 

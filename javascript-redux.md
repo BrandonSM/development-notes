@@ -2,7 +2,7 @@
 
 Redux notes. Redux has alot of fancy terminology that obscures straightforward concepts. The key is to mastering the terminology to make it easy.
 
-***ONE OF THE BEST LIBRARIES IN EXISTNECE FOR SCALING AN APPLICATION TO BE VERY LARGE WITH THE LEAST AMOUNT OF CODE COMPLEXITY***
+***ONE OF THE BEST LIBRARIES IN EXISTENCE FOR SCALING AN APPLICATION TO BE VERY LARGE WITH THE LEAST AMOUNT OF CODE COMPLEXITY***
 This is due to the `action` system. This allows us to make predicatable changes. We never have to access the `state` (store) directly. We use an `action`. 
 Actions modify the `state` in a very particular way. We can only modify the `state` in a very finite number of ways.
 
@@ -17,8 +17,8 @@ Store - an object that holds the applications data. holds the reducers and appli
 
 Example.......
 ````
-      Action         ->           Reducer               ->       State
-
+      Action         ->           Reducer               ->     State/Store
+s
 turn 'asdf' into an  ->  if the actions type is 'split' ->  ['a','s','d','f']
 array of characters      i will take a string of chars
                          and turn it into an array
@@ -40,7 +40,7 @@ const reducer = (state = [], action) => {
   return state;
 };
 
-// sets up the Redux store
+// sets up the Redux store - A store is an object that holds our application's state and reducers
 const store = Redux.createStore(reducer);
 
 // plain javascript object that will always include a 'type' property with a string as it's value (REQUIREMENT).

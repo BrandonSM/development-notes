@@ -69,13 +69,31 @@ class ClassName extends Component {
 ```
 
 ## 4. Props
-
 Props are equivalent to arguments (args). They are considered properties that are assigned values by the parent, and and are fixed throughout the lifetime of the component.
+
+Props are attributes that are passed to the component.
 
 eg.
 
 ```Javascript
-const HelloWorld = (props) => { } 
+// React way of doing it
+const HelloWorld = (props) => { 
+  <div>Hello {props.name}!</div>
+} 
+
+// renders  Hello Brandon!
+<HelloWorld name="Brandon"/>
+
+```
+
+```Javascript
+// Function way of doing it
+function HelloWorld(name) {
+  console.log("Hello " + name + "!")
+}
+
+// logs Hello Max!
+HelloWorld('Max');
 ```
 
 eg. within a Component
