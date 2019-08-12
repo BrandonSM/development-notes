@@ -5,11 +5,12 @@ This repo serves as a holding place for all the various notes I'm taking as I'm 
 ## Languages 
 
 1. [JavaScript](#)
-2. [PHP](#)
-3. [Ruby](#)
-4. [HTML/CSS](#)
-5. [Swift](#)
-6. [Android](#)
+2. [GraphQL](#)
+3. [PHP](#)
+4. [Ruby](#)
+5. [HTML/CSS](#)
+6. [Swift](#)
+7. [Android](#)
 
 ## Frameworks
 
