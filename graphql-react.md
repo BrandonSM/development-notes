@@ -38,9 +38,10 @@ login:               user:  USER.id
 
 ## Query
 
-The `Root Query` is the entry point into the graph. `query(User: 23) { }` means get "Get the details of the user with the id of 23"
+`RootQuery` - is the entry point into the graph. 
+`query(User: 23) { }` - means get "Get the details of the user with the id of 23"
 
-```JavaScript
+```GraphQL
 // If you'r elooking for a user, if you give me an ID, I'll give you a user
 // in the resolve resolve function, this is where your logic goes
 const RootQuery = new GraphQLObjectType({
@@ -67,7 +68,7 @@ const RootQuery = new GraphQLObjectType({
 ```
 
 
-```
+```GraphQL
 {
   user(id: "23") {
     id,
@@ -75,3 +76,4 @@ const RootQuery = new GraphQLObjectType({
     age
   }
 }
+```
